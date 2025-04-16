@@ -15,7 +15,9 @@ from requests import Session
 import os
 from dotenv import load_dotenv
 load_dotenv()
+import requests
 
+session = requests.Session()
 # No verificar el certifcado para los request
 ssl._create_default_https_context = ssl._create_unverified_context
 
