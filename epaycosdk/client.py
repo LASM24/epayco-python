@@ -161,6 +161,7 @@ class Client:
                     url_params=data
                     payload = {}
                    # session = NoRebuildAuthSession()
+                    session = requests.Session()
                     response = Session.get(self.build_url(url), headers=headers, data = payload, params=url_params)
             elif (method == "POST"):
                 for key, value in data.items():
